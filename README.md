@@ -1,4 +1,38 @@
-# Supabase SvelteKit User Management
+# MODIFIED VERSION FOR GOOGLE AUTH
+
+## user_metadata comes back encoded and can't be used directly
+
+`AleÅ¡ VaupotiÄ` should read `Aleš Vaupotič`
+
+```json
+{
+	"id": "95ae3b97-308b-48d0-b6a8-ca4cecc1c734",
+	"aud": "authenticated",
+	"email": "ales@vaupotic.eu",
+	"phone": "",
+	"app_metadata": {
+		"provider": "google",
+		"providers": ["google"]
+	},
+	"user_metadata": {
+		"avatar_url": "https://lh3.googleusercontent.com/a/ALm5wu0gqKlOGLtZN5A0CTOzfmAO8rnd-v0cMjLPzboU1w=s96-c",
+		"email": "ales@vaupotic.eu",
+		"email_verified": true,
+		"full_name": "AleÅ¡ VaupotiÄ",
+		"iss": "https://www.googleapis.com/userinfo/v2/me",
+		"name": "AleÅ¡ VaupotiÄ",
+		"picture": "https://lh3.googleusercontent.com/a/ALm5wu0gqKlOGLtZN5A0CTOzfmAO8rnd-v0cMjLPzboU1w=s96-c",
+		"provider_id": "114084102336688010361",
+		"sub": "114084102336688010361",
+		"test5": "updated",
+		"theme": "sedem"
+	},
+	"role": "authenticated",
+	"session_id": "514cb785-6282-4a1f-a0a6-019fc4eb824a"
+}
+```
+
+## Supabase SvelteKit User Management
 
 ## Build from scratch
 

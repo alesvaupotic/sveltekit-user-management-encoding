@@ -18,6 +18,8 @@
 	const getProfile = async () => {
 		const { user } = session
 
+		console.log(JSON.stringify(user, null, 4))
+
 		username = user.user_metadata.email
 		fullName = user.user_metadata.full_name
 		avatarUrl = user.user_metadata.avatar_url
